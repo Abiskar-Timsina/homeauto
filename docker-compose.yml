@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  homeauto:
+    build: ./homeauto
+
+    container_name: "homeauto"
+    command: bash run.sh
+
+    ports:
+      - 5000:5000
+    
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5m"
+        max-file: "5"

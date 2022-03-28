@@ -1,2 +1,3 @@
 env/
-application/__pycache__
+homeauto/*/__pycache__
+test.py
