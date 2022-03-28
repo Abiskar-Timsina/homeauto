@@ -1,8 +1,7 @@
-import imp
 from . import app
-from flask import Response
+from flask import Response,render_template
 
 
 @app.route("/")
 def entry_page():
-    return Response({"Hello":"World!"},status=200)
+    return render_template("home.html")
